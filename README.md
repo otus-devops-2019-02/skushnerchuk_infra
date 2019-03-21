@@ -1,9 +1,7 @@
 ### Homework 3 (cloud-bastion)
 
-Данные сети
------------
-bastion_IP = 35.189.248.149
-someinternalhost_IP = 10.142.0.2
+bastion_IP=35.189.248.149
+someinternalhost_IP=10.142.0.2
 
 **Задание 1.** Исследовать способ подключения к someinternalhost в одну команду из вашего рабочего устройства
 
@@ -41,5 +39,5 @@ Host someinternalhost
 
 Скриншот, подтверждающий успешное выполнение задания:
 
-![alt text](./cloud-bastion/certificate.png)
+![alt text](certificate.png)
   
