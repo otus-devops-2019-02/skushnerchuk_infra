@@ -40,4 +40,4 @@ Host someinternalhost
 Скриншот, подтверждающий успешное выполнение задания:
 
 ![alt text](certificate.png)
-  
+
