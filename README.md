@@ -1,5 +1,5 @@
 ### Homework 4 (cloud-testapp)
-testapp_IP = 35.241.186.218
+testapp_IP = 35.195.151.40
 testapp_port = 9292
 
 **Задание 1.** Установка и настройка утилиты gcloud, создание виртуальной машины
