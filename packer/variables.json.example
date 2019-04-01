@@ -1,0 +1,9 @@
+{
+    "project_id": "project_id",
+    "source_image_family": "base_image",
+    "machine_type": "f1-micro",
+    "image_description": "Image for ruby applications",
+    "disk_type": "pd-standard",
+    "disk_size": "10",
+    "network_name": "default"
+}
