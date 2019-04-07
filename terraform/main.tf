@@ -77,6 +77,7 @@ resource "google_compute_project_metadata" "ssh_keys" {
     appuser1:${trimspace(file(var.public_key_path))}
     appuser2:${trimspace(file(var.public_key_path))}
     appuser3:${trimspace(file(var.public_key_path))}
-    appuser4:${trimspace(file(var.public_key_path))}EOF
+    appuser4:${trimspace(file(var.public_key_path))}
+EOF
   }
 }
