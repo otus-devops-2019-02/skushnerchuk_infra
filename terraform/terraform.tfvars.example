@@ -4,3 +4,4 @@ private_key_path = "~/.ssh/appuser"
 disk_image = "reddit-base"
 region = "europe-west1"
 instances_count = 2
+need_deploy = 1
