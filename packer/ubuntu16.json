@@ -16,7 +16,7 @@
       "machine_type": "{{user `machine_type`}}",
       "disk_type": "{{user `disk_type`}}",
       "disk_size": "{{user `disk_size`}}",
-      "tags": ["puma-server"],
+      "tags": ["puma-server", "reddit-db"],
       "network": "{{user `network_name`}}"
     }
   ],
@@ -33,3 +33,4 @@
     }
   ]
 }
+
