@@ -33,7 +33,6 @@ resource "google_compute_firewall" "firewall_puma" {
 
   allow {
     protocol = "tcp"
-
     ports = ["9292"]
   }
 
@@ -69,3 +68,4 @@ resource "null_resource" "app" {
     script = "${path.module}/files/deploy.sh"
   }
 }
+

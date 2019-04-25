@@ -6,3 +6,6 @@ variables.json
 .terraform/
 .vscode/
 *.log
+*.retry
+dynamic_inventory.py
+infra-*
