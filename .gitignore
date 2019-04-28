@@ -7,5 +7,6 @@ variables.json
 .vscode/
 *.log
 *.retry
-dynamic_inventory.py
 infra-*
+jdauphant.nginx
+vault.key
