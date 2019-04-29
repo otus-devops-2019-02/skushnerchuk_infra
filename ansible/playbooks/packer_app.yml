@@ -5,7 +5,7 @@
   tasks:
 
   #  Использование циклов в apt считается устаревшим
-  # Оставлено здесь в качестве примера 
+  # Оставлено здесь в качестве примера
   # - name: Install ruby, gems and packages
   #   apt: "name={{ item }} state=present"
   #   with_items:
@@ -14,7 +14,6 @@
   #     - build-essential
 
   - name: Install ruby, gems and packages
-    apt: 
-      name: ["ruby-full", "ruby-bundler", "build-essential"] 
+    apt:
+      name: ["ruby-full", "ruby-bundler", "build-essential"]
       state: present
-

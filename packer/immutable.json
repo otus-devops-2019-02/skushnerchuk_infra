@@ -20,12 +20,12 @@
   "provisioners": [
     {
       "type": "shell",
-      "script": "files/deploy.sh",
+      "script": "packer/files/deploy.sh",
       "execute_command": "{{.Path}}"
     },
     {
       "type": "file",
-      "source": "files/puma.service",
+      "source": "packer/files/puma.service",
       "destination": "/tmp/puma.service"
     },
     {

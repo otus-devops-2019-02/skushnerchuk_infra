@@ -1,10 +1,43 @@
+[![Build Status](https://travis-ci.com/skushnerchuk/trytravis_infra.svg?branch=ansible-3)](https://travis-ci.com/skushnerchuk/trytravis_infra)
+
+### Homework 10 (ansible-3)
+
+**Основное задание**
+
+Созданы роли для для конфигурирования приложения и базы (инициализация структуры выполялась через команду **ansible-galaxy init**)
+
+Playbooks переписаны на использование созданных ролей
+
+Созданы отдельные окружения для управления через ansible: stage и prod. Inventory для каждого из окружения используется свой, и создается динамически.
+
+В качестве окружения по умолчанию задано окружение storage
+
+Добавлено использование групповых переменных.
+
+Исследована работа с community ролями путем добавления в проект роли **jdauphant.nginx**
+
+В конфигурацию terraform добавлено правило, открывающее 80 порт для nginx
+
+С помощью ansible-vault организовано добавление новых пользователей в систему через новый playbook.
+
+**Задание со \*, слайд 55**
+
+Для каждого окружения задано свой динамический Inventory
+
+**Задание с \*\*, слайд 56, 57**
+
+Добавлены дополнительные проверки для Travis-CI
+Отладка тестов проводилось с помощью trytravis и репозитария trytravis_infra
+
+<details>
+<summary>Homework 9 (ansible-2)</summary>
 ### Homework 9 (ansible-2)
 
 **Основное задание**
 
 Отключен provisioner в конфигурации terraforn (через переменную)
 
-Созданы playbook, с помощью которых выполняется установка и настройка приложения и базы данных. 
+Созданы playbook, с помощью которых выполняется установка и настройка приложения и базы данных.
 
 Исследовано поведение ansible handlers
 
@@ -38,9 +71,10 @@ ansible -i sample_di.gcp.yml all -m ping
 Созданы playbooks, предназначенные на замену скриптам, используемым при формировании исходных образов.
 
 На основании этих playbooks собраны образы, развернуто окружение и проверена работоспособность созданных ранее playbooks для развертывания приложения и базы.
+</details>
 
-
-
+<details>
+<summary>Homework 8 (ansible-1)</summary>
 ### Homework 8 (ansible-1)
 
 **Задание 1.** Установка ansible
@@ -128,7 +162,10 @@ ansible all -m ping
 после его добавления в ansible.cfg в качестве inventory по умолчанию
 
 Создан скрипт **dynamic_inventory.py**, генерирующий inventory на лету на основании указанных данных проекта инфраструктуры
+</details>
 
+<details>
+<summary>Homework 7 (terraform-2)</summary>
 ### Homework 7 (terraform-2)
 **Задание 1.** Импорт существующих сущностей в конфигурацию Terraform
 
@@ -153,7 +190,10 @@ ansible all -m ping
 
 Добавлены файлы и настройки для деплоя приложения в модуль app.
 
+</details>
 
+<details>
+<summary>Homework 6 (terraform-1)</summary>
 ### Homework 6 (terraform-1)
 
 **Задание 1.** Установка утилиты terraform. Подготовка и отладка конфигурации инфтрастуртуры.
@@ -201,7 +241,10 @@ terraform apply
 
 **Задание со \*\*, слайд 55.**
 Конфигурация была изменена на использование счетчика **count**. Добавлена переменная, с помощью которой можно регулировать количество экземпляров приложения.
+</details>
 
+<details>
+<summary>Homework 5 (packer-base)</summary>
 ### Homework 5 (packer-base)
 
 **Задание 1.** Установка утилиты packer. Подготовка шаблона для packer.
@@ -226,7 +269,10 @@ gcloud compute instances create reddit-app\
   --zone europe-west1-b \
   --restart-on-failure
 ```
+</details>
 
+<details>
+<summary>Homework 4 (cloud-testapp)</summary>
 ### Homework 4 (cloud-testapp)
 testapp_IP = 35.195.151.40
 testapp_port = 9292
@@ -278,8 +324,11 @@ gcloud compute instances create reddit-app\
 ```
 gcloud compute firewall-rules create default-puma-server --allow tcp:9292 --target-tags puma-server
 ```
+</details>
 
 
+<details>
+<summary>Homework 3 (cloud-bastion)</summary>
 ### Homework 3 (cloud-bastion)
 
 bastion_IP=35.189.248.149
@@ -322,3 +371,4 @@ Host someinternalhost
 Скриншот, подтверждающий успешное выполнение задания:
 
 ![alt text](./VPN/certificate.png)
+</details>
