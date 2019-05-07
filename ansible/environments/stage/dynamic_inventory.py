@@ -13,7 +13,7 @@ from googleapiclient.errors import HttpError
 
 # Переменные, необходимые для получения списка экземпляров ВМ
 ZONE = 'europe-west1-b'
-PID = 'infra-12345'
+PID = 'infra-235018'
 
 # Шаблон, используемый для построения inventory
 TEMPLATE = {
@@ -131,4 +131,3 @@ if __name__ == '__main__':
     logging.debug(inventory)
     logging.debug('===================')
     print(json.dumps(inventory, ensure_ascii=False))
-

@@ -1,3 +1,5 @@
 ansible>=2.4
 google-api-python-client
-
+molecule>=2.6
+testinfra>=1.10
+python-vagrant>=0.5.15
