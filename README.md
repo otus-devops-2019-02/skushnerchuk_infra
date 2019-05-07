@@ -1,5 +1,26 @@
-[![Build Status](https://travis-ci.com/skushnerchuk/trytravis_infra.svg?branch=ansible-3)](https://travis-ci.com/skushnerchuk/trytravis_infra)
 
+
+
+### Homework 11 (ansible-4)
+
+Branch build: [![Build Status](https://travis-ci.com/skushnerchuk/trytravis_infra.svg?branch=ansible-4)](https://travis-ci.com/otus-devops-2019-02/skushnerchuk_infra)
+DB role build: [![Build Status](https://travis-ci.com/skushnerchuk/db.svg?branch=master)](https://travis-ci.com/skushnerchuk/db)
+
+**Основное задание**
+
+- Локальная разработка при помощи Vagrant - в Vagrantfile описаны конфигурации appserver, dbserver
+- Добавлен плейбук base.yml для ansible bootstrap на хостах, где не установлен python
+- Доработана роль db для использования в Vagrant, в которую добавлены таски config_mongo.yml, install_mongo.yml
+- В Vagrantfile добавлены ansible провижинеры для appserver и dbserver
+- Добавлены тесты роли db через molecula и testinfra
+
+
+**Задания со \***
+
+Роль **db** вынесена в [отдельный репозитарий](https://github.com/skushnerchuk/db). Для нее Подключен TravisCI для для автоматического прогона тестов в GCE.
+
+<details>
+<summary>Homework 10 (ansible-3)</summary>
 ### Homework 10 (ansible-3)
 
 **Основное задание**
@@ -28,6 +49,7 @@ Playbooks переписаны на использование созданны�
 
 Добавлены дополнительные проверки для Travis-CI
 Отладка тестов проводилось с помощью trytravis и репозитария trytravis_infra
+</details>
 
 <details>
 <summary>Homework 9 (ansible-2)</summary>
@@ -123,7 +145,7 @@ PLAY [Clone]
 TASK [Gathering Facts] ok: [35.195.199.144]
 TASK [Clone repository] changed: [35.195.199.144]
 
-35.195.199.144             : ok=2    changed=1    unreachable=0    failed=0  
+35.195.199.144             : ok=2    changed=1    unreachable=0    failed=0
 ```
 
 **Задание со \*, слайд 33** Исследование динамических inventory
